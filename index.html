@@ -157,12 +157,8 @@
       }
 
       @keyframes gridMove {
-        0% {
-          transform: translate(0, 0);
-        }
-        100% {
-          transform: translate(100px, 100px);
-        }
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(100px, 100px); }
       }
 
       .hero-content {
@@ -198,15 +194,8 @@
       }
 
       @keyframes pulse {
-        0%,
-        100% {
-          opacity: 1;
-          transform: scale(1);
-        }
-        50% {
-          opacity: 0.5;
-          transform: scale(1.3);
-        }
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(1.3); }
       }
 
       .hero h1 {
@@ -219,11 +208,7 @@
       }
 
       .hero .name {
-        background: linear-gradient(
-          135deg,
-          var(--primary) 0%,
-          var(--accent) 100%
-        );
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -263,9 +248,7 @@
         text-decoration: none;
         position: relative;
         overflow: hidden;
-        transition:
-          transform 0.3s,
-          box-shadow 0.3s;
+        transition: transform 0.3s, box-shadow 0.3s;
         cursor: pointer;
       }
 
@@ -293,25 +276,13 @@
       }
 
       @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(-30px); }
+        to { opacity: 1; transform: translateY(0); }
       }
 
       @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(40px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
       }
 
       /* Scroll Indicator */
@@ -347,24 +318,13 @@
       }
 
       @keyframes bounce {
-        0%,
-        100% {
-          transform: translateX(-50%) translateY(0);
-        }
-        50% {
-          transform: translateX(-50%) translateY(10px);
-        }
+        0%, 100% { transform: translateX(-50%) translateY(0); }
+        50% { transform: translateX(-50%) translateY(10px); }
       }
 
       @keyframes scrollDot {
-        0% {
-          opacity: 1;
-          top: 8px;
-        }
-        100% {
-          opacity: 0;
-          top: 24px;
-        }
+        0% { opacity: 1; top: 8px; }
+        100% { opacity: 0; top: 24px; }
       }
 
       /* Section Styles */
@@ -424,11 +384,7 @@
       .profile-image {
         width: 100%;
         aspect-ratio: 1;
-        background: linear-gradient(
-          135deg,
-          rgba(123, 43, 255, 0.3),
-          rgba(0, 245, 255, 0.3)
-        );
+        background: linear-gradient(135deg, rgba(123, 43, 255, 0.3), rgba(0, 245, 255, 0.3));
         border-radius: 20px;
         margin-bottom: 2rem;
         display: flex;
@@ -443,22 +399,13 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(
-          45deg,
-          transparent 30%,
-          rgba(255, 255, 255, 0.1) 50%,
-          transparent 70%
-        );
+        background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
         animation: shimmer 3s infinite;
       }
 
       @keyframes shimmer {
-        0% {
-          transform: translateX(-100%) translateY(-100%);
-        }
-        100% {
-          transform: translateX(100%) translateY(100%);
-        }
+        0% { transform: translateX(-100%) translateY(-100%); }
+        100% { transform: translateX(100%) translateY(100%); }
       }
 
       .profile-info h2 {
@@ -489,13 +436,8 @@
         transition: color 0.3s;
       }
 
-      .contact-item:hover {
-        color: var(--primary);
-      }
-
-      .contact-item:last-child {
-        border-bottom: none;
-      }
+      .contact-item:hover { color: var(--primary); }
+      .contact-item:last-child { border-bottom: none; }
 
       .contact-icon {
         font-size: 1.5rem;
@@ -545,46 +487,38 @@
         font-size: 1.05rem;
       }
 
-      .edu-item,
-      .exp-item {
+      .edu-item, .exp-item {
         margin-bottom: 2rem;
         padding-bottom: 2rem;
         border-bottom: 1px solid var(--border);
       }
 
-      .edu-item:last-child,
-      .exp-item:last-child {
+      .edu-item:last-child, .exp-item:last-child {
         border-bottom: none;
         margin-bottom: 0;
         padding-bottom: 0;
       }
 
-      .edu-title,
-      .exp-title {
+      .edu-title, .exp-title {
         font-size: 1.3rem;
         font-weight: 700;
         color: var(--text-white);
         margin-bottom: 0.5rem;
       }
 
-      .edu-school,
-      .exp-company {
+      .edu-school, .exp-company {
         color: var(--primary);
         font-weight: 600;
         margin-bottom: 0.5rem;
       }
 
-      .edu-year,
-      .exp-duration {
+      .edu-year, .exp-duration {
         color: var(--text-gray);
         font-size: 0.9rem;
       }
 
       /* Skills Section */
-      .skills-container {
-        max-width: 1400px;
-        margin: 0 auto;
-      }
+      .skills-container { max-width: 1400px; margin: 0 auto; }
 
       .skills-grid {
         display: grid;
@@ -597,10 +531,7 @@
         padding: 2.5rem;
         border-radius: 20px;
         border: 1px solid var(--border);
-        transition:
-          transform 0.3s,
-          border-color 0.3s,
-          box-shadow 0.3s;
+        transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
       }
 
       .skill-category:hover {
@@ -618,9 +549,7 @@
         gap: 0.8rem;
       }
 
-      .skill-icon {
-        font-size: 2rem;
-      }
+      .skill-icon { font-size: 2rem; }
 
       .skill-list {
         display: flex;
@@ -656,9 +585,7 @@
         border-radius: 25px;
         overflow: hidden;
         border: 1px solid var(--border);
-        transition:
-          transform 0.4s,
-          box-shadow 0.4s;
+        transition: transform 0.4s, box-shadow 0.4s;
       }
 
       .project-card:hover {
@@ -682,23 +609,14 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(
-          45deg,
-          transparent,
-          rgba(255, 255, 255, 0.1),
-          transparent
-        );
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
         transform: translateX(-100%);
         transition: transform 0.6s;
       }
 
-      .project-card:hover .project-image::before {
-        transform: translateX(100%);
-      }
+      .project-card:hover .project-image::before { transform: translateX(100%); }
 
-      .project-content {
-        padding: 2.5rem;
-      }
+      .project-content { padding: 2.5rem; }
 
       .project-header {
         display: flex;
@@ -724,9 +642,7 @@
         justify-content: center;
         color: var(--primary);
         text-decoration: none;
-        transition:
-          transform 0.3s,
-          background 0.3s;
+        transition: transform 0.3s, background 0.3s;
         font-size: 1.2rem;
       }
 
@@ -784,22 +700,6 @@
         margin-bottom: 2rem;
       }
 
-      .platform-badges {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        margin-bottom: 2rem;
-      }
-
-      .badge {
-        padding: 0.8rem 2rem;
-        background: rgba(0, 245, 255, 0.1);
-        border: 1px solid var(--primary);
-        border-radius: 30px;
-        color: var(--primary);
-        font-weight: 600;
-      }
-
       /* Contact Section */
       .contact {
         background: var(--bg-dark);
@@ -828,10 +728,7 @@
         text-align: center;
         text-decoration: none;
         color: var(--text-white);
-        transition:
-          transform 0.3s,
-          border-color 0.3s,
-          box-shadow 0.3s;
+        transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
       }
 
       .contact-card:hover {
@@ -863,67 +760,63 @@
         color: var(--text-gray);
       }
 
+      /* Marquee */
+      .marquee-container { display: flex; width: 100%; }
+      .marquee-content {
+        display: flex;
+        gap: 2rem;
+        animation: marquee 40s linear infinite;
+        white-space: nowrap;
+      }
+
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+
+      .skill-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2rem;
+        background: linear-gradient(135deg, rgba(2, 119, 189, 0.2), rgba(3, 169, 244, 0.2));
+        border: 2px solid rgba(3, 169, 244, 0.4);
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #03a9f4;
+        box-shadow: 0 5px 15px rgba(3, 169, 244, 0.2);
+        transition: all 0.3s;
+      }
+
+      .skill-badge:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(3, 169, 244, 0.4);
+      }
+
+      .marquee-container:hover .marquee-content { animation-play-state: paused; }
+
       /* Responsive */
       @media (max-width: 1200px) {
-        .about-container {
-          grid-template-columns: 1fr;
-          gap: 3rem;
-        }
-
-        .profile-card {
-          position: relative;
-          top: 0;
-        }
+        .about-container { grid-template-columns: 1fr; gap: 3rem; }
+        .profile-card { position: relative; top: 0; }
       }
 
       @media (max-width: 968px) {
-        .cursor,
-        .cursor-follower {
-          display: none;
-        }
-
-        body {
-          cursor: default;
-        }
-
-        .nav-links {
-          gap: 1.5rem;
-          font-size: 0.85rem;
-        }
-
-        .projects-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .skills-grid {
-          grid-template-columns: 1fr;
-        }
+        .cursor, .cursor-follower { display: none; }
+        body { cursor: default; }
+        .nav-links { gap: 1.5rem; font-size: 0.85rem; }
+        .projects-grid { grid-template-columns: 1fr; }
+        .skills-grid { grid-template-columns: 1fr; }
       }
 
       @media (max-width: 640px) {
-        .navbar {
-          padding: 1.5rem 5%;
-        }
-
-        .section {
-          padding: 5rem 5%;
-        }
-
-        .cta-group {
-          flex-direction: column;
-        }
-
-        .btn {
-          width: 100%;
-        }
-
-        .profile-card {
-          padding: 2rem;
-        }
-
-        .detail-card {
-          padding: 2rem;
-        }
+        .navbar { padding: 1.5rem 5%; }
+        .section { padding: 5rem 5%; }
+        .cta-group { flex-direction: column; }
+        .btn { width: 100%; }
+        .profile-card { padding: 2rem; }
+        .detail-card { padding: 2rem; }
       }
     </style>
   </head>
@@ -983,18 +876,14 @@
             <h2>Anik Biswas</h2>
             <div class="profile-role">Software Engineer (Flutter)</div>
 
-            <a
-              href="https://wa.me/8801305032297"
-              class="contact-item"
-              target="_blank"
-            >
+            <a href="https://wa.me/8801305032297" class="contact-item" target="_blank">
               <span class="contact-icon">💬</span>
               <span>+880 1305032297</span>
             </a>
 
-            <a href="mailto:anikbiswas326@gmail.com" class="contact-item">
+            <a href="/cdn-cgi/l/email-protection#b1d0dfd8dad3d8c2c6d0c2828387f1d6dcd0d8dd9fd2dedc" class="contact-item">
               <span class="contact-icon">📧</span>
-              <span>anikbiswas326@gmail.com</span>
+              <span><span class="__cf_email__" data-cfemail="c5a4abacaea7acb6b2a4b6f6f7f385a2a8a4aca9eba6aaa8">[email&#160;protected]</span></span>
             </a>
 
             <div class="contact-item">
@@ -1034,9 +923,7 @@
             <h3>Education</h3>
             <div class="edu-item">
               <div class="edu-title">B.Sc. Engg. in CSE</div>
-              <div class="edu-school">
-                Bangladesh University of Business & Technology (BUBT)
-              </div>
+              <div class="edu-school">Bangladesh University of Business & Technology (BUBT)</div>
               <div class="edu-year">2021 - 2025 | Dhaka, Bangladesh</div>
             </div>
           </div>
@@ -1045,10 +932,13 @@
             <h3>Professional Experience</h3>
             <div class="exp-item">
               <div class="exp-title">Junior Flutter Developer</div>
-              <div class="exp-company">
-                Softvence IT Ltd (Sister Concern of Betopia Group)
-              </div>
-              <div class="exp-duration">2024 - Present</div>
+              <div class="exp-company">Softvence IT Ltd (Sister Concern of Betopia Group)</div>
+              <div class="exp-duration">2025 - Present</div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-title">Data Analytics</div>
+              <div class="exp-company">Intelligent Image Management Ltd (IIML)</div>
+              <div class="exp-duration">June 2024 - December 2024</div>
             </div>
           </div>
         </div>
@@ -1062,22 +952,7 @@
         <p class="section-desc">My technical expertise and tools</p>
       </div>
 
-      <!-- Auto-scrolling Skills Marquee -->
-      <div
-        style="
-          overflow: hidden;
-          margin-bottom: 4rem;
-          padding: 2rem 0;
-          background: linear-gradient(
-            90deg,
-            rgba(2, 119, 189, 0.05),
-            rgba(3, 169, 244, 0.1),
-            rgba(2, 119, 189, 0.05)
-          );
-          border-top: 2px solid rgba(3, 169, 244, 0.3);
-          border-bottom: 2px solid rgba(3, 169, 244, 0.3);
-        "
-      >
+      <div style="overflow: hidden; margin-bottom: 4rem; padding: 2rem 0; background: linear-gradient(90deg, rgba(2, 119, 189, 0.05), rgba(3, 169, 244, 0.1), rgba(2, 119, 189, 0.05)); border-top: 2px solid rgba(3, 169, 244, 0.3); border-bottom: 2px solid rgba(3, 169, 244, 0.3);">
         <div class="marquee-container">
           <div class="marquee-content">
             <span class="skill-badge">Flutter 💙</span>
@@ -1120,62 +995,6 @@
           </div>
         </div>
       </div>
-
-      <style>
-        .marquee-container {
-          display: flex;
-          width: 100%;
-        }
-
-        .marquee-content {
-          display: flex;
-          gap: 2rem;
-          animation: marquee 40s linear infinite;
-          white-space: nowrap;
-        }
-
-        @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-
-        .skill-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          padding: 1rem 2rem;
-          background: linear-gradient(
-            135deg,
-            rgba(2, 119, 189, 0.2),
-            rgba(3, 169, 244, 0.2)
-          );
-          border: 2px solid rgba(3, 169, 244, 0.4);
-          border-radius: 50px;
-          font-size: 1.1rem;
-          font-weight: 600;
-          color: #03a9f4;
-          box-shadow: 0 5px 15px rgba(3, 169, 244, 0.2);
-          transition: all 0.3s;
-        }
-
-        .skill-badge:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 25px rgba(3, 169, 244, 0.4);
-          background: linear-gradient(
-            135deg,
-            rgba(2, 119, 189, 0.3),
-            rgba(3, 169, 244, 0.3)
-          );
-        }
-
-        .marquee-container:hover .marquee-content {
-          animation-play-state: paused;
-        }
-      </style>
 
       <div class="skills-container">
         <div class="skills-grid">
@@ -1260,17 +1079,11 @@
           <div class="project-image">🏥</div>
           <div class="project-content">
             <div class="project-header">
-              <div>
-                <h3 class="project-title">AnalyticDepart</h3>
-              </div>
+              <div><h3 class="project-title">AnalyticDepart</h3></div>
               <a href="#" class="project-link">→</a>
             </div>
             <p class="project-desc">
-              Smart Medical Assistant App - A Flutter-based mobile application
-              designed to manage and analyze medicine-related data. Track
-              prescriptions, monitor medicine usage, analyze treatment
-              effectiveness, receive reminders, and securely maintain personal
-              health logs.
+              Smart Medical Assistant App - A Flutter-based mobile application designed to manage and analyze medicine-related data. Track prescriptions, monitor medicine usage, analyze treatment effectiveness, receive reminders, and securely maintain personal health logs.
             </p>
             <div class="project-tags">
               <span class="tag">Flutter</span>
@@ -1286,16 +1099,11 @@
           <div class="project-image">🎵</div>
           <div class="project-content">
             <div class="project-header">
-              <div>
-                <h3 class="project-title">Music App</h3>
-              </div>
+              <div><h3 class="project-title">Music App</h3></div>
               <a href="#" class="project-link">→</a>
             </div>
             <p class="project-desc">
-              Social Music Platform - Full-featured social music application
-              with Spotify API integration. Discover music, review songs and
-              albums, create playlists, participate in listening rooms, with
-              social login, subscriptions, and analytics.
+              Social Music Platform - Full-featured social music application with Spotify API integration. Discover music, review songs and albums, create playlists, participate in listening rooms, with social login, subscriptions, and analytics.
             </p>
             <div class="project-tags">
               <span class="tag">Flutter</span>
@@ -1310,16 +1118,11 @@
           <div class="project-image">📚</div>
           <div class="project-content">
             <div class="project-header">
-              <div>
-                <h3 class="project-title">Exam & Quiz App</h3>
-              </div>
+              <div><h3 class="project-title">Exam & Quiz App</h3></div>
               <a href="#" class="project-link">→</a>
             </div>
             <p class="project-desc">
-              Educational platform for national entrance exam preparation.
-              Features previous exam questions, timed MCQ quizzes, offline
-              downloads, performance tracking, learning resources with full
-              backend API integration and admin content management.
+              Educational platform for national entrance exam preparation. Features previous exam questions, timed MCQ quizzes, offline downloads, performance tracking, learning resources with full backend API integration and admin content management.
             </p>
             <div class="project-tags">
               <span class="tag">Flutter</span>
@@ -1333,16 +1136,11 @@
           <div class="project-image">💬</div>
           <div class="project-content">
             <div class="project-header">
-              <div>
-                <h3 class="project-title">Social Media App</h3>
-              </div>
+              <div><h3 class="project-title">Social Media App</h3></div>
               <a href="#" class="project-link">→</a>
             </div>
             <p class="project-desc">
-              Creators & Fans Platform - Feature-rich social media app with
-              real-time WebSocket chat, token monetization via Stripe, content
-              unlocking, tipping, stories, live translation, creator dashboards,
-              and web-based admin panel.
+              Creators & Fans Platform - Feature-rich social media app with real-time WebSocket chat, token monetization via Stripe, content unlocking, tipping, stories, live translation, creator dashboards, and web-based admin panel.
             </p>
             <div class="project-tags">
               <span class="tag">Flutter</span>
@@ -1357,16 +1155,11 @@
           <div class="project-image">🧾</div>
           <div class="project-content">
             <div class="project-header">
-              <div>
-                <h3 class="project-title">Mobile Invoicing App</h3>
-              </div>
+              <div><h3 class="project-title">Mobile Invoicing App</h3></div>
               <a href="#" class="project-link">→</a>
             </div>
             <p class="project-desc">
-              Custom tablet-based invoicing solution for service businesses.
-              Automated annual service scheduling, real-time customer updates,
-              email invoicing, and secure online payment integration with phased
-              development approach.
+              Custom tablet-based invoicing solution for service businesses. Automated annual service scheduling, real-time customer updates, email invoicing, and secure online payment integration with phased development approach.
             </p>
             <div class="project-tags">
               <span class="tag">Flutter</span>
@@ -1387,22 +1180,14 @@
       <div class="publication-card">
         <h3>💪 Notorious Fitness App</h3>
         <p>
-          A full-featured fitness application developed using Flutter and
-          published for both Android and iOS platforms. The app includes workout
-          plans, fitness tracking, user-friendly UI, and performance-focused
-          mobile features.
+          A full-featured fitness application developed using Flutter and published for both Android and iOS platforms. The app includes workout plans, fitness tracking, user-friendly UI, and performance-focused mobile features.
         </p>
         <a
           href="https://apps.apple.com/us/app/notorious-fitness/id6748907248"
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn-primary"
-          style="
-            margin-top: 2rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-          "
+          style="margin-top: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;"
         >
           <span>🍎</span>
           View on App Store
@@ -1412,48 +1197,82 @@
 
     <section class="section" style="padding-top: 4rem">
       <div class="publication-card">
-        <div
-          style="margin-bottom: 2rem; display: flex; justify-content: center"
-        >
-          <div
-            style="
-              width: 120px;
-              height: 120px;
-              background: linear-gradient(135deg, #ff4444, #ff8844);
-              border-radius: 25px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 4rem;
-              box-shadow: 0 15px 50px rgba(255, 69, 0, 0.4);
-            "
-          >
+        <div style="margin-bottom: 2rem; display: flex; justify-content: center;">
+          <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #ff4444, #ff8844); border-radius: 25px; display: flex; align-items: center; justify-content: center; font-size: 4rem; box-shadow: 0 15px 50px rgba(255, 69, 0, 0.4);">
             🔥
           </div>
         </div>
         <h3>🔥 PACIFIC FIRE FIELD SERVICE</h3>
         <p>
-          Based on the requirements, I'll be able to develop a custom mobile
-          invoicing app that service-based business that simplifies the
-          invoicing process, automates annual service scheduling, enables
-          real-time customer data updates, allows sending invoices via e-mail,
-          and supports online payments.
+          Based on the requirements, I'll be able to develop a custom mobile invoicing app that service-based business that simplifies the invoicing process, automates annual service scheduling, enables real-time customer data updates, allows sending invoices via e-mail, and supports online payments.
         </p>
         <a
           href="https://apps.apple.com/us/app/pacific-fire-field-service/id6752685414"
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn-primary"
-          style="
-            margin-top: 2rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-          "
+          style="margin-top: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;"
         >
           <span>🍎</span>
           View on App Store
         </a>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 2rem;">
+      <div class="section-header">
+        <div class="section-tag">Research</div>
+        <h2 class="section-title">Research & Publications</h2>
+        <p class="section-desc">Academic research and published work</p>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div style="background: var(--bg-card); border-radius: 25px; padding: 3.5rem; border: 1px solid var(--border); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;"
+          onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 30px 80px rgba(0,245,255,0.2)';this.style.borderColor='rgba(0,245,255,0.4)';"
+          onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';this.style.borderColor='rgba(255,255,255,0.1)';"
+        >
+          <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(0,245,255,0.08), transparent 70%); pointer-events: none;"></div>
+          <div style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(0,245,255,0.15), rgba(123,43,255,0.15)); border: 2px solid rgba(0,245,255,0.3); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0;">
+              🔬
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+              <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1rem;">
+                <div style="display: inline-block; padding: 0.3rem 1rem; background: rgba(0,245,255,0.08); border: 1px solid rgba(0,245,255,0.25); border-radius: 20px; font-size: 0.8rem; font-weight: 600; color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase;">
+                  Research Paper
+                </div>
+                <div style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 1rem; background: rgba(255, 180, 0, 0.08); border: 1px solid rgba(255, 180, 0, 0.4); border-radius: 20px; font-size: 0.8rem; font-weight: 600; color: #ffb400; letter-spacing: 0.08em; text-transform: uppercase;">
+                  <span style="width: 7px; height: 7px; background: #ffb400; border-radius: 50%; animation: pulse 2s infinite; display: inline-block;"></span>
+                  Under Review
+                </div>
+                <div style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 1rem; background: rgba(0, 119, 204, 0.1); border: 1px solid rgba(0, 119, 204, 0.4); border-radius: 20px; font-size: 0.8rem; font-weight: 600; color: #4da6ff; letter-spacing: 0.08em; text-transform: uppercase;">
+                  🏛️ IEEE Conference
+                </div>
+              </div>
+              <h3 style="font-size: 1.7rem; font-weight: 700; color: var(--text-white); line-height: 1.3; margin-bottom: 1rem;">
+                Eye Disease Detection Using Convolutional Neural Network (CNN)
+              </h3>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1.5rem;">
+                <span style="display: flex; align-items: center; gap: 0.4rem; color: var(--text-gray); font-size: 0.95rem;">
+                  <span>👤</span> Anik Biswas
+                </span>
+                <span style="color: rgba(255,255,255,0.2);">|</span>
+                <span style="display: flex; align-items: center; gap: 0.4rem; color: var(--text-gray); font-size: 0.95rem;">
+                  <span>🏫</span> BUBT, Dhaka
+                </span>
+              </div>
+              <p style="color: var(--text-gray); line-height: 1.8; font-size: 1rem; margin-bottom: 2rem;">
+                A research paper focused on automated detection of eye diseases using deep learning techniques. The study applies Convolutional Neural Networks (CNN) to classify and identify various ocular conditions from retinal images, aiming to support early diagnosis and improve healthcare accessibility through AI-powered medical imaging.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                <span style="padding: 0.5rem 1.2rem; background: rgba(0,245,255,0.05); border: 1px solid rgba(0,245,255,0.2); border-radius: 20px; font-size: 0.85rem; color: var(--primary); font-weight: 500;">Deep Learning</span>
+                <span style="padding: 0.5rem 1.2rem; background: rgba(0,245,255,0.05); border: 1px solid rgba(0,245,255,0.2); border-radius: 20px; font-size: 0.85rem; color: var(--primary); font-weight: 500;">CNN</span>
+                <span style="padding: 0.5rem 1.2rem; background: rgba(0,245,255,0.05); border: 1px solid rgba(0,245,255,0.2); border-radius: 20px; font-size: 0.85rem; color: var(--primary); font-weight: 500;">Medical Imaging</span>
+                <span style="padding: 0.5rem 1.2rem; background: rgba(0,245,255,0.05); border: 1px solid rgba(0,245,255,0.2); border-radius: 20px; font-size: 0.85rem; color: var(--primary); font-weight: 500;">Computer Vision</span>
+                <span style="padding: 0.5rem 1.2rem; background: rgba(0,245,255,0.05); border: 1px solid rgba(0,245,255,0.2); border-radius: 20px; font-size: 0.85rem; color: var(--primary); font-weight: 500;">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1464,291 +1283,79 @@
       </div>
       <div class="contact-content">
         <p class="section-desc">
-          Interested in collaborating or have a project in mind? I'd love to
-          hear from you!
+          Interested in collaborating or have a project in mind? I'd love to hear from you!
         </p>
       </div>
 
-      <!-- Contact Form with Flutter/Dart Vibes -->
-      <div
-        style="
-          max-width: 700px;
-          margin: 0 auto 4rem;
-          background: linear-gradient(
-            135deg,
-            rgba(2, 119, 189, 0.05),
-            rgba(3, 169, 244, 0.05)
-          );
-          padding: 3rem;
-          border-radius: 25px;
-          border: 2px solid rgba(2, 119, 189, 0.3);
-          box-shadow: 0 10px 40px rgba(2, 119, 189, 0.2);
-        "
-      >
-        <div style="text-align: center; margin-bottom: 2rem">
-          <div
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 1rem;
-              margin-bottom: 1rem;
-            "
-          >
-            <span style="font-size: 3rem">💙</span>
-            <span
-              style="
-                font-size: 2.5rem;
-                font-weight: 700;
-                background: linear-gradient(135deg, #0277bd, #03a9f4);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-              "
-              >Flutter</span
-            >
-            <span style="font-size: 2rem">×</span>
-            <span
-              style="
-                font-size: 2.5rem;
-                font-weight: 700;
-                background: linear-gradient(135deg, #00b4ab, #00d2b8);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-              "
-              >Dart</span
-            >
+      <div style="max-width: 700px; margin: 0 auto 4rem; background: linear-gradient(135deg, rgba(2, 119, 189, 0.05), rgba(3, 169, 244, 0.05)); padding: 3rem; border-radius: 25px; border: 2px solid rgba(2, 119, 189, 0.3); box-shadow: 0 10px 40px rgba(2, 119, 189, 0.2);">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <div style="display: inline-flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <span style="font-size: 3rem;">💙</span>
+            <span style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #0277bd, #03a9f4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Flutter</span>
+            <span style="font-size: 2rem;">×</span>
+            <span style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #00b4ab, #00d2b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Dart</span>
           </div>
-          <p style="color: var(--text-gray); font-size: 1rem">
-            Let's build something amazing together!
-          </p>
+          <p style="color: var(--text-gray); font-size: 1rem;">Let's build something amazing together!</p>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 1.5rem">
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
           <div>
-            <label
-              style="
-                display: block;
-                color: #03a9f4;
-                margin-bottom: 0.5rem;
-                font-weight: 600;
-                font-size: 0.9rem;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-              "
-            >
-              <span style="margin-right: 0.3rem">👤</span> Name
+            <label style="display: block; color: #03a9f4; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">
+              <span style="margin-right: 0.3rem;">👤</span> Name
             </label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              required
-              style="
-                width: 100%;
-                padding: 1rem 1.5rem;
-                background: rgba(2, 119, 189, 0.08);
-                border: 2px solid rgba(2, 119, 189, 0.3);
-                border-radius: 12px;
-                color: var(--text-white);
-                font-size: 1rem;
-                font-family: &quot;Space Grotesk&quot;, sans-serif;
-                transition: all 0.3s;
-              "
-              onfocus="
-                this.style.borderColor = '#03A9F4';
-                this.style.background = 'rgba(3, 169, 244, 0.15)';
-                this.style.boxShadow = '0 0 20px rgba(3, 169, 244, 0.3)';
-              "
-              onblur="
-                this.style.borderColor = 'rgba(2, 119, 189, 0.3)';
-                this.style.background = 'rgba(2, 119, 189, 0.08)';
-                this.style.boxShadow = 'none';
-              "
+            <input type="text" placeholder="Enter your name" required
+              style="width: 100%; padding: 1rem 1.5rem; background: rgba(2, 119, 189, 0.08); border: 2px solid rgba(2, 119, 189, 0.3); border-radius: 12px; color: var(--text-white); font-size: 1rem; font-family: 'Space Grotesk', sans-serif; transition: all 0.3s; outline: none;"
+              onfocus="this.style.borderColor='#03A9F4';this.style.background='rgba(3,169,244,0.15)';this.style.boxShadow='0 0 20px rgba(3,169,244,0.3)';"
+              onblur="this.style.borderColor='rgba(2,119,189,0.3)';this.style.background='rgba(2,119,189,0.08)';this.style.boxShadow='none';"
             />
           </div>
 
           <div>
-            <label
-              style="
-                display: block;
-                color: #03a9f4;
-                margin-bottom: 0.5rem;
-                font-weight: 600;
-                font-size: 0.9rem;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-              "
-            >
-              <span style="margin-right: 0.3rem">📧</span> Email
+            <label style="display: block; color: #03a9f4; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">
+              <span style="margin-right: 0.3rem;">📧</span> Email
             </label>
-            <input
-              type="email"
-              placeholder="your.email@example.com"
-              required
-              style="
-                width: 100%;
-                padding: 1rem 1.5rem;
-                background: rgba(2, 119, 189, 0.08);
-                border: 2px solid rgba(2, 119, 189, 0.3);
-                border-radius: 12px;
-                color: var(--text-white);
-                font-size: 1rem;
-                font-family: &quot;Space Grotesk&quot;, sans-serif;
-                transition: all 0.3s;
-              "
-              onfocus="
-                this.style.borderColor = '#03A9F4';
-                this.style.background = 'rgba(3, 169, 244, 0.15)';
-                this.style.boxShadow = '0 0 20px rgba(3, 169, 244, 0.3)';
-              "
-              onblur="
-                this.style.borderColor = 'rgba(2, 119, 189, 0.3)';
-                this.style.background = 'rgba(2, 119, 189, 0.08)';
-                this.style.boxShadow = 'none';
-              "
+            <input type="email" placeholder="your.email@example.com" required
+              style="width: 100%; padding: 1rem 1.5rem; background: rgba(2, 119, 189, 0.08); border: 2px solid rgba(2, 119, 189, 0.3); border-radius: 12px; color: var(--text-white); font-size: 1rem; font-family: 'Space Grotesk', sans-serif; transition: all 0.3s; outline: none;"
+              onfocus="this.style.borderColor='#03A9F4';this.style.background='rgba(3,169,244,0.15)';this.style.boxShadow='0 0 20px rgba(3,169,244,0.3)';"
+              onblur="this.style.borderColor='rgba(2,119,189,0.3)';this.style.background='rgba(2,119,189,0.08)';this.style.boxShadow='none';"
             />
           </div>
 
           <div>
-            <label
-              style="
-                display: block;
-                color: #03a9f4;
-                margin-bottom: 0.5rem;
-                font-weight: 600;
-                font-size: 0.9rem;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-              "
-            >
-              <span style="margin-right: 0.3rem">📱</span> Mobile Number
+            <label style="display: block; color: #03a9f4; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">
+              <span style="margin-right: 0.3rem;">📱</span> Mobile Number
             </label>
-            <input
-              type="tel"
-              placeholder="+880 1234567890"
-              required
-              style="
-                width: 100%;
-                padding: 1rem 1.5rem;
-                background: rgba(2, 119, 189, 0.08);
-                border: 2px solid rgba(2, 119, 189, 0.3);
-                border-radius: 12px;
-                color: var(--text-white);
-                font-size: 1rem;
-                font-family: &quot;Space Grotesk&quot;, sans-serif;
-                transition: all 0.3s;
-              "
-              onfocus="
-                this.style.borderColor = '#03A9F4';
-                this.style.background = 'rgba(3, 169, 244, 0.15)';
-                this.style.boxShadow = '0 0 20px rgba(3, 169, 244, 0.3)';
-              "
-              onblur="
-                this.style.borderColor = 'rgba(2, 119, 189, 0.3)';
-                this.style.background = 'rgba(2, 119, 189, 0.08)';
-                this.style.boxShadow = 'none';
-              "
+            <input type="tel" placeholder="+880 1234567890" required
+              style="width: 100%; padding: 1rem 1.5rem; background: rgba(2, 119, 189, 0.08); border: 2px solid rgba(2, 119, 189, 0.3); border-radius: 12px; color: var(--text-white); font-size: 1rem; font-family: 'Space Grotesk', sans-serif; transition: all 0.3s; outline: none;"
+              onfocus="this.style.borderColor='#03A9F4';this.style.background='rgba(3,169,244,0.15)';this.style.boxShadow='0 0 20px rgba(3,169,244,0.3)';"
+              onblur="this.style.borderColor='rgba(2,119,189,0.3)';this.style.background='rgba(2,119,189,0.08)';this.style.boxShadow='none';"
             />
           </div>
 
           <div>
-            <label
-              style="
-                display: block;
-                color: #03a9f4;
-                margin-bottom: 0.5rem;
-                font-weight: 600;
-                font-size: 0.9rem;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-              "
-            >
-              <span style="margin-right: 0.3rem">💬</span> Message
+            <label style="display: block; color: #03a9f4; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">
+              <span style="margin-right: 0.3rem;">💬</span> Message
             </label>
-            <textarea
-              placeholder="Tell me about your Flutter project..."
-              required
-              rows="5"
-              style="
-                width: 100%;
-                padding: 1rem 1.5rem;
-                background: rgba(2, 119, 189, 0.08);
-                border: 2px solid rgba(2, 119, 189, 0.3);
-                border-radius: 12px;
-                color: var(--text-white);
-                font-size: 1rem;
-                font-family: &quot;Space Grotesk&quot;, sans-serif;
-                resize: vertical;
-                transition: all 0.3s;
-              "
-              onfocus="
-                this.style.borderColor = '#03A9F4';
-                this.style.background = 'rgba(3, 169, 244, 0.15)';
-                this.style.boxShadow = '0 0 20px rgba(3, 169, 244, 0.3)';
-              "
-              onblur="
-                this.style.borderColor = 'rgba(2, 119, 189, 0.3)';
-                this.style.background = 'rgba(2, 119, 189, 0.08)';
-                this.style.boxShadow = 'none';
-              "
+            <textarea placeholder="Tell me about your Flutter project..." required rows="5"
+              style="width: 100%; padding: 1rem 1.5rem; background: rgba(2, 119, 189, 0.08); border: 2px solid rgba(2, 119, 189, 0.3); border-radius: 12px; color: var(--text-white); font-size: 1rem; font-family: 'Space Grotesk', sans-serif; resize: vertical; transition: all 0.3s; outline: none;"
+              onfocus="this.style.borderColor='#03A9F4';this.style.background='rgba(3,169,244,0.15)';this.style.boxShadow='0 0 20px rgba(3,169,244,0.3)';"
+              onblur="this.style.borderColor='rgba(2,119,189,0.3)';this.style.background='rgba(2,119,189,0.08)';this.style.boxShadow='none';"
             ></textarea>
           </div>
 
-          <button
-            type="submit"
-            style="
-              width: 100%;
-              padding: 1.3rem 3rem;
-              font-size: 1.1rem;
-              font-weight: 700;
-              letter-spacing: 0.05em;
-              text-transform: uppercase;
-              border-radius: 12px;
-              border: none;
-              background: linear-gradient(135deg, #0277bd, #03a9f4);
-              color: white;
-              cursor: pointer;
-              transition: all 0.3s;
-              box-shadow: 0 10px 30px rgba(3, 169, 244, 0.3);
-              font-family: &quot;Space Grotesk&quot;, sans-serif;
-            "
-            onmouseover="
-              this.style.transform = 'translateY(-3px)';
-              this.style.boxShadow = '0 15px 40px rgba(3, 169, 244, 0.5)';
-            "
-            onmouseout="
-              this.style.transform = 'translateY(0)';
-              this.style.boxShadow = '0 10px 30px rgba(3, 169, 244, 0.3)';
-            "
+          <button type="submit"
+            style="width: 100%; padding: 1.3rem 3rem; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border-radius: 12px; border: none; background: linear-gradient(135deg, #0277bd, #03a9f4); color: white; cursor: pointer; transition: all 0.3s; box-shadow: 0 10px 30px rgba(3, 169, 244, 0.3); font-family: 'Space Grotesk', sans-serif;"
+            onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 15px 40px rgba(3,169,244,0.5)';"
+            onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 10px 30px rgba(3,169,244,0.3)';"
           >
-            <span
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 0.8rem;
-              "
-            >
-              <span style="font-size: 1.3rem">🚀</span>
+            <span style="display: flex; align-items: center; justify-content: center; gap: 0.8rem;">
+              <span style="font-size: 1.3rem;">🚀</span>
               <span>Send Message</span>
             </span>
           </button>
 
-          <div
-            style="
-              text-align: center;
-              margin-top: 1rem;
-              padding: 1rem;
-              background: rgba(0, 180, 171, 0.1);
-              border-radius: 10px;
-              border: 1px solid rgba(0, 180, 171, 0.3);
-            "
-          >
-            <code
-              style="
-                color: #00d2b8;
-                font-size: 0.9rem;
-                font-family: &quot;Courier New&quot;, monospace;
-              "
-            >
+          <div style="text-align: center; margin-top: 1rem; padding: 1rem; background: rgba(0, 180, 171, 0.1); border-radius: 10px; border: 1px solid rgba(0, 180, 171, 0.3);">
+            <code style="color: #00d2b8; font-size: 0.9rem; font-family: 'Courier New', monospace;">
               // Let's code something beautiful in Flutter 💙
             </code>
           </div>
@@ -1756,34 +1363,19 @@
       </div>
 
       <div class="contact-grid">
-        <a href="mailto:anikbiswas326@gmail.com" class="contact-card">
+        <a href="/cdn-cgi/l/email-protection#a2c3cccbc9c0cbd1d5c3d1919094e2c5cfc3cbce8cc1cdcf" class="contact-card">
           <span class="contact-icon">📧</span>
           <div class="contact-label">Email</div>
         </a>
-        <a
-          href="https://github.com/byteAnik"
-          class="contact-card"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/byteAnik" class="contact-card" target="_blank" rel="noopener noreferrer">
           <span class="contact-icon">💻</span>
           <div class="contact-label">GitHub</div>
         </a>
-        <a
-          href="https://www.linkedin.com/in/anik-biswas-337a58243/"
-          class="contact-card"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.linkedin.com/in/anik-biswas-337a58243/" class="contact-card" target="_blank" rel="noopener noreferrer">
           <span class="contact-icon">💼</span>
           <div class="contact-label">LinkedIn</div>
         </a>
-        <a
-          href="https://wa.me/8801305032297"
-          class="contact-card"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://wa.me/8801305032297" class="contact-card" target="_blank" rel="noopener noreferrer">
           <span class="contact-icon">💬</span>
           <div class="contact-label">WhatsApp</div>
         </a>
@@ -1794,15 +1386,13 @@
       <p>&copy; 2024 Anik Biswas. Crafted with Flutter & passion.</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
       // Custom Cursor
       const cursor = document.querySelector(".cursor");
       const follower = document.querySelector(".cursor-follower");
 
-      let mouseX = 0,
-        mouseY = 0;
-      let followerX = 0,
-        followerY = 0;
+      let mouseX = 0, mouseY = 0;
+      let followerX = 0, followerY = 0;
 
       document.addEventListener("mousemove", (e) => {
         mouseX = e.clientX;
@@ -1824,10 +1414,7 @@
           e.preventDefault();
           const target = document.querySelector(this.getAttribute("href"));
           if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
           }
         });
       });
@@ -1845,11 +1432,6 @@
       });
 
       // Intersection Observer for animations
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px",
-      };
-
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -1857,16 +1439,6 @@
             entry.target.style.transform = "translateY(0)";
           }
         });
-      }, observerOptions);
+      }, { threshold: 0.1, rootMargin: "0px 0px -100px 0px" });
 
-      document
-        .querySelectorAll(".skill-category, .project-card, .detail-card")
-        .forEach((el) => {
-          el.style.opacity = "0";
-          el.style.transform = "translateY(30px)";
-          el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-          observer.observe(el);
-        });
-    </script>
-  </body>
-</html>
+      document.querySelect
